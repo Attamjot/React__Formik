@@ -1,6 +1,7 @@
 body {
   margin: 0;
   width: 100%;
+  background-color: #f2f2f2;
 }
 .main-header ul {
   margin: 0;
@@ -28,7 +29,7 @@ body {
 
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .textCenter {
