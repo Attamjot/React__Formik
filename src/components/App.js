@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Switch, NavLink } from "react-router-dom";
 import Homepage from "../pages/homepage";
 import Formpage from "../pages/formpage";
+import MultiStepForm from "../pages/multiStepForm";
 
 const Navbar = () => (
   <nav className="main-header">
@@ -12,6 +13,9 @@ const Navbar = () => (
       </li>
       <li>
         <NavLink to="/form">Form</NavLink>
+      </li>
+      <li>
+        <NavLink to="/multiStepForm">Multi Step Form</NavLink>
       </li>
     </ul>
   </nav>
@@ -24,6 +28,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Homepage}></Route>
           <Route path="/form" component={Formpage}></Route>
+          <Route path="/multiStepForm" component={MultiStepForm}></Route>
         </Switch>
       </div>
     );
